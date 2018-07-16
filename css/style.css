@@ -1,3 +1,10 @@
+/* Breakpoints
+ * x-small: 576px
+ * small: 768px
+ * medium: 992px
+ * large: 1200px
+ * X-large: > 1200px
+*/
 @import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,700|Work+Sans:400,700');
 
 html
@@ -14,139 +21,46 @@ h1, h2, h3, h4, h5, h6
 /* Header Navigation */
 header .navbar
 {
-	font-size: 1.2rem;
-	padding: 0.5rem 0 0 0;
+	background-color: transparent;
+	padding: 0.5rem 1rem 0 1rem;
 	transition: all .5s ease-out;
 }
 
-header .navbar-default
+header .navbar .navbar-nav a
 {
-	background-color: transparent;
-	border: none;
-}
-
-header .navbar-default .navbar-nav a
-{
-	padding: 0.5em 0.9em;
 	color: white;
 }
 
-header .navbar-default .navbar-nav a:hover
-{
-	color: black;
-}
-
-header .navbar-default .navbar-nav .active a
+header .navbar .navbar-nav .active a
 {
 	background: transparent;
-	color: DeepSkyBlue;
 	border-bottom: 4px solid DeepSkyBlue;
-	text-shadow: none;
-}
-
-header .navbar-default .navbar-nav .active a:hover
-{
-	background: transparent;
-	color: black;
 	text-shadow: none;
 }
 
 /* Navbar Brand */
 header .navbar-brand
 {
-	height: auto;
-	padding: 0.25em 0;
-}
-
-header .navbar-brand h1
-{
 	visibility: hidden;
-	color: white;
 }
 
-/* Navbar Toggle */
-header .navbar-toggle
-{
-	background-color: black;
-}
-
-header .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus
-{
-	background-color: dimgray;
-}
-
-header .navbar-toggle .icon-bar
-{
-	background-color: white;
-}
-
-@media only screen and (max-width: 768px)
-{
-	header .navbar-collapse.in
-	{
-		background-color: rgba(0, 0, 0, 1);
-	}
-}
-
-/* Nav: floatingNav */
-
-header .floatingNav
-{
-	background: rgba(0, 0, 0, 0.8);
-}
-
+/* floatingNav */
 header .navbar.floatingNav
 {
-}
-
-header .navbar.floatingNav .navbar-nav
-{
-	padding-top: 0;
-}
-
-header .navbar.floatingNav .navbar-nav a
-{
-	color: white;
-}
-
-header .navbar.floatingNav .navbar-nav a:hover
-{
-	color: DeepSkyBlue;
-}
-
-header .floatingNav .navbar-brand h1
-{
+	background-color: black;
 	visibility: visible;
+}
+
+header .navbar.floatingNav .navbar-toggler .navbar-toggler-icon
+{
 	color: white;
-	font-size: 1.4em;
 }
 
-/* Section */
-.section
-{
-	padding: 5rem 0;
-}
 
-.section h2
+header .navbar.floatingNav .navbar-brand
 {
-	text-align: center;
-	padding-bottom: 1em;
-}
-
-/* Jumbotron */
-.jumbotron
-{
-	font-size: 2.5rem;
-	position: absolute;
 	color: white;
-	background-color: transparent;
-}
-
-/* Info - Paragraphs */
-.info
-{
-	font-family: "Work Sans", sans-serif;
-	font-size: 1rem;
+	visibility: visible;
 }
 
 /* Title Page */
@@ -162,149 +76,6 @@ header .floatingNav .navbar-brand h1
 	height: 100%;
 }
 
-/* Section: About */
-#about
-{
-	background-color: #66c2ff;
-}
-
-#about img
-{
-	max-height: 400px;
-	max-width: 400px;
-	width: 100%;
-	height: 100%;
-}
-
-/* Section: Co-op */
-#coop
-{
-	background-image: url("../images/sheridan.jpg");
-	background-repeat: no-repeat;
-	background-size: cover;
-	background-attachment: fixed;
-}
-
-#coop h2
-{
-	color: black;
-	text-shadow: 0.5px 0.5px;
-}
-
-#coop .panel-heading
-{
-	background-color: #33adff;
-	padding: 0.8rem 0 0.8rem 1rem;
-}
-
-#coop .panel-heading a
-{
-	color: black;
-	font-family: "Work Sans", sans-serif;
-	font-size: 1.1em;
-}
-
-#coop .panel-heading a:hover
-{
-	cursor: pointer
-}
-
-#coop .panel-body
-{
-	background-color: #ccebff;
-	font-size: 0.9em;
-}
-
-/* Section: Projects */
-.projects
-{
-	text-align: center;
-}
-
-#projects
-{
-	height: auto;
-	background-color: black;
-}
-
-#projects img.icon
-{
-	display: block;
-	width: 80px;
-	margin: 0 auto;
-}
-
-#projects h2
-{
-	color: white;
-}
-
-#projects p
-{
-	color: white;
-}
-
-@media only screen and (min-width: 450px) and (max-width: 768px)
-{
-	.projects p
-	{
-		padding: 0 20%;
-	}
-}
-
-/* Section: Resume */
-#resume
-{
-	height: auto;
-	background-color: white;
-}
-
-/* Section: Contact */
-#contact
-{
-	height: auto;
-	background-color: #3399ff;
-}
-
-#contact #footerBtns
-{
-	margin: 5rem 0;
-}
-
-/* Font-Awesome Buttons */
-.fa
-{
-	display: inline !important;
-	width: 50px;
-	height: 50px;
-	padding: 1.5rem;
-  	text-decoration: none;
-  	border-radius: 100%;
-}
-
-.fa:hover
-{
-    opacity: 0.7;
-}
-
-.fa-linkedin
-{
-  	background: #007bb5;
-  	color: white;
-}
-
-.fa-github
-{
-  	background: black;
-  	color: white;
-}
-
-.fa-envelope
-{
-	background: red;
-	color: black;
-}
-
 /* Footer */
 footer
 {
@@ -315,4 +86,31 @@ footer p
 {
 	font-size: 0.75em;
 	color: white;
+}
+
+/* Between Medium and Large */
+@media (min-width: 768px) and (max-width: 991px)
+{
+	header .navbar
+	{
+		padding: 0.5rem 2rem 0 2rem;
+	}
+}
+
+/* Between Large and X-large */
+@media (min-width: 992px) and (max-width: 1199px)
+{
+	header .navbar
+	{
+		padding: 0.5rem 2rem 0 2rem;
+	}
+}
+
+/* X-large and Up */
+@media (min-width: 1200px)
+{
+	header .navbar
+	{
+		padding: 0.5rem 5rem 0 5rem;
+	}
 }

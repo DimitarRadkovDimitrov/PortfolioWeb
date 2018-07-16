@@ -1,36 +1,43 @@
-$(function()
-{
-    "use strict";
+"use strict";
 
-    var topoffset = 50; //menu height
+/**
+ * Makes title image fill entire window on resize
+ */
+function resizeHomeImg()
+{
     var winHeight = $(window).height();
     var winWidth = $(window).width();
+
     var image = document.getElementById("homeImg");
-    var jumbo = document.getElementById("jumbo");
+    image.setAttribute('style', 'height: ' + winHeight + 'px');
+}
 
-    image.setAttribute('style', 'height: ' + winHeight + 'px !important');
-    jumbo.setAttribute('style', 'top: ' + (winHeight/3) + 'px;');
-
-    //Set the home page image to window height on resize
-    window.addEventListener('resize', function(event){
-        winHeight = $(window).height();
-        winWidth = $(window).width();
-        image = document.getElementById("homeImg");
-        jumbo = document.getElementById("jumbo");
-
-        image.setAttribute('style', 'height: ' + winHeight + 'px !important');
-        jumbo.setAttribute('style', 'top: ' + (winHeight/3) + 'px;');
+/**
+ * Switch active attribute for navigation links (Scrollspy + Boostrap 4 workaround)
+ */
+function switchActiveLink()
+{
+    var navItemList = $('.navbar-nav').children().each(function() {
+        let navItem = $(this);
+        let link = navItem.find('.nav-link');
+        if (link.hasClass('active'))
+        {
+            navItem.addClass('active');
+        }
+        else
+        {
+            navItem.removeClass('active');
+        }
     });
+}
 
-    //Activate Scrollspy
-    $('body').scrollspy({
-        target: 'header .navbar',
-        offset: topoffset
-    });
-
-    //Add floatingNav class
-    var hash = $(this).find('li.active a').attr('href');
-    if (hash !== '#home')
+/**
+ * Switch to floating navigation after title page has passed
+ */
+function switchToFloating()
+{
+    let link = $('.navbar-nav').find('.nav-link.active').attr('href');
+    if (link !== '#home')
     {
         $('header nav').addClass('floatingNav');
     }
@@ -38,41 +45,36 @@ $(function()
     {
         $('header nav').removeClass('floatingNav');
     }
+}
 
+/**
+ * Smooth scroll animation on link click
+ */
+function smoothScroll()
+{
+    event.preventDefault();
 
-    // Add a floatingNav class to nav when scrollspy event fires
-    $('.navbar-fixed-top').on('activate.bs.scrollspy', function()
+    $('html, body').animate(
     {
-        var hash = $(this).find('li.active a').attr('href');
-        if (hash !== '#home')
-        {
-            $('header nav').addClass('floatingNav');
-        }
-        else
-        {
-            $('header nav').removeClass('floatingNav');
-        }
-    });
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 750);
+}
 
-    //Simple smooth scroll function
-    $(document).on('click', 'a[href^="#"]', function (event)
-    {
-        event.preventDefault();
+/**
+ * Main execution
+ */
+$(document).ready(function() {
+    resizeHomeImg();
+    let topOffset = document.querySelector(".navbar.fixed-top").offsetHeight; //menu height
 
-        $('html, body').animate({
-            scrollTop: $($.attr(this, 'href')).offset().top
-        }, 500);
-    });
+    //activate scrollspy
+    $('body').scrollspy({target: 'header .navbar', offset: topOffset});
+    switchActiveLink(); //initialize active link
+    switchToFloating();
 
-    $('.panel-collapse').on('hide.bs.collapse', function () {
-        $('html, body').animate({
-            scrollTop: $(this).offset().top - topoffset
-        }, 0);
-    });
-
-    $('.panel-collapse').on('shown.bs.collapse', function () {
-        $('html, body').animate({
-            scrollTop: $(this).closest('.panel').offset().top - topoffset
-        }, 400);
-    });
+    //event listeners
+    window.addEventListener('resize', resizeHomeImg);
+    $(document).on('click', 'a[href^="#"]', smoothScroll);
+    $(window).on('activate.bs.scrollspy', switchActiveLink);
+    $(window).on('activate.bs.scrollspy', switchToFloating);
 });
