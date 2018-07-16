@@ -1,3 +1,10 @@
+/* Breakpoints
+ * x-small: 576px
+ * small: 768px
+ * medium: 992px
+ * large: 1200px
+ * X-large: > 1200px
+*/
 @import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,700|Work+Sans:400,700');
 
 html
@@ -15,7 +22,7 @@ h1, h2, h3, h4, h5, h6
 header .navbar
 {
 	background-color: transparent;
-	padding-bottom: 0;
+	padding: 0.5rem 1rem 0 1rem;
 	transition: all .5s ease-out;
 }
 
@@ -43,6 +50,12 @@ header .navbar.floatingNav
 	background-color: black;
 	visibility: visible;
 }
+
+header .navbar.floatingNav .navbar-toggler .navbar-toggler-icon
+{
+	color: white;
+}
+
 
 header .navbar.floatingNav .navbar-brand
 {
@@ -73,4 +86,31 @@ footer p
 {
 	font-size: 0.75em;
 	color: white;
+}
+
+/* Between Medium and Large */
+@media (min-width: 768px) and (max-width: 991px)
+{
+	header .navbar
+	{
+		padding: 0.5rem 2rem 0 2rem;
+	}
+}
+
+/* Between Large and X-large */
+@media (min-width: 992px) and (max-width: 1199px)
+{
+	header .navbar
+	{
+		padding: 0.5rem 2rem 0 2rem;
+	}
+}
+
+/* X-large and Up */
+@media (min-width: 1200px)
+{
+	header .navbar
+	{
+		padding: 0.5rem 5rem 0 5rem;
+	}
 }
