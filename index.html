@@ -48,12 +48,16 @@
 
     <div id="main">
         <div class="section container-fluid" id="home">
-            <div class="row">
-                <!-- "Fog in the Valley, Candle in the Sky" by Zach Dischner
-                     taken from https://www.flickr.com/photos/zachd1_618/12603079745/in/photolist-kcG5wn-dRAWuz-dQNbTm-dQp8SY-dKMVw4-dBiJNQ-bm4C86-bhdeLM-bdeene-aVsLGK-9rDtwH-9d4xA3-99nLQg-95ZNHk-95Y28j-93n95t-8ZodLv-8VFW2b-8eG8j7-7Qeaxs-7DuCPa-7Cuk4M-7Ck2vS-7xE7u4-7wQeCD-7umFmU-7fQF7J-7fDbya-7eL41h-6u8XJm-6nJmDa-6jVYEf-6dw5sX-5YgDDJ-5Usihh-5TVuJy-5SsDot-5S9dJP-5KgjGr-5DoreC-4z8kqk-Cp8xY-Cbggp-BH6tV-XSm3SJ-Y6sSaa-WuBwwh-VgLga1-V2fHMd-Wcg5SJ
-                     No changes were made -->
-                <img id="homeImg" src="./images/fogInTheValley-1024w.jpg">
-            </div><!-- row -->
+            <!-- "Fog in the Valley, Candle in the Sky" by Zach Dischner
+                 taken from https://www.flickr.com/photos/zachd1_618/12603079745/in/photolist-kcG5wn-dRAWuz-dQNbTm-dQp8SY-dKMVw4-dBiJNQ-bm4C86-bhdeLM-bdeene-aVsLGK-9rDtwH-9d4xA3-99nLQg-95ZNHk-95Y28j-93n95t-8ZodLv-8VFW2b-8eG8j7-7Qeaxs-7DuCPa-7Cuk4M-7Ck2vS-7xE7u4-7wQeCD-7umFmU-7fQF7J-7fDbya-7eL41h-6u8XJm-6nJmDa-6jVYEf-6dw5sX-5YgDDJ-5Usihh-5TVuJy-5SsDot-5S9dJP-5KgjGr-5DoreC-4z8kqk-Cp8xY-Cbggp-BH6tV-XSm3SJ-Y6sSaa-WuBwwh-VgLga1-V2fHMd-Wcg5SJ
+                 No changes were made -->
+            <picture>
+                <source media="(min-width: 1300px)" srcset="./images/fogInTheValley-1024w.jpg">
+                <source media="(min-width: 1000px) and (max-width: 1299px)" srcset="./images/fogInTheValley-1000w.jpg">
+                <source media="(min-width: 800px) and (max-width: 999px)" srcset="./images/fogInTheValley-800w.jpg">
+                <source media="(min-width: 630px) and (max-width: 799px)" srcset="./images/fogInTheValley-630w.jpg">
+                <img src="./images/fogInTheValley-480w.jpeg" alt="Background Picture">
+            </picture>
         </div><!-- home section -->
 
         <div id="about" style="height: 1000px;">
