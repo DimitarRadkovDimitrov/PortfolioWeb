@@ -7,9 +7,12 @@ function resizeHomeImg()
 {
     var winHeight = $(window).height();
     var winWidth = $(window).width();
+    var imgContainer = $('#home');
+    //var image = $('#home img');
 
-    var image = document.getElementById("homeImg");
-    image.setAttribute('style', 'height: ' + winHeight + 'px');
+    imgContainer.attr('style', 'height: ' + winHeight + 'px');
+    //imgContainer.attr('style', 'width: ' + winWidth + 'px');
+    //image.attr('style', 'height: ' + winHeight + 'px');
 }
 
 /**
