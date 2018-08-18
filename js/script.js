@@ -51,33 +51,23 @@ function switchToFloating()
 }
 
 /**
- * Smooth scroll animation on link click
- */
-function smoothScroll()
-{
-    event.preventDefault();
-
-    $('html, body').animate(
-    {
-        scrollTop: $($.attr(this, 'href')).offset().top
-    }, 750);
-}
-
-/**
  * Main execution
  */
 $(document).ready(function() {
+    const topOffset = 52; //menu height
     resizeHomeImg();
-    let topOffset = document.querySelector(".navbar.fixed-top").offsetHeight; //menu height
+    $('.section').css('margin-top', topOffset);
 
-    //activate scrollspy
-    $('body').scrollspy({target: 'header .navbar', offset: topOffset});
+    $('body').scrollspy({target: 'header .navbar', offset: topOffset}); //activate scrollspy
     switchActiveLink(); //initialize active link
-    switchToFloating();
+    switchToFloating(); //switch to floating if starting off on non-home page
 
     //event listeners
     window.addEventListener('resize', resizeHomeImg);
-    $(document).on('click', 'a[href^="#"]', smoothScroll);
+    $(document).on('click', 'a[href^="#"]', function() {
+        event.preventDefault();
+        $('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top - topOffset}, 750);
+    });
     $(window).on('activate.bs.scrollspy', switchActiveLink);
     $(window).on('activate.bs.scrollspy', switchToFloating);
 });
