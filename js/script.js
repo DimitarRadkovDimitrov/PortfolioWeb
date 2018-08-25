@@ -8,11 +8,8 @@ function resizeHomeImg()
     var winHeight = $(window).height();
     var winWidth = $(window).width();
     var imgContainer = $('#home');
-    //var image = $('#home img');
 
     imgContainer.attr('style', 'height: ' + winHeight + 'px');
-    //imgContainer.attr('style', 'width: ' + winWidth + 'px');
-    //image.attr('style', 'height: ' + winHeight + 'px');
 }
 
 /**
@@ -56,7 +53,7 @@ function switchToFloating()
 $(document).ready(function() {
     const topOffset = 52; //menu height
     resizeHomeImg();
-    $('.section').css('margin-top', topOffset);
+    $('.section').css('padding-top', topOffset);
 
     $('body').scrollspy({target: 'header .navbar', offset: topOffset}); //activate scrollspy
     switchActiveLink(); //initialize active link
@@ -66,7 +63,7 @@ $(document).ready(function() {
     window.addEventListener('resize', resizeHomeImg);
     $(document).on('click', 'a[href^="#"]', function() {
         event.preventDefault();
-        $('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top - topOffset}, 750);
+        $('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top}, 750);
     });
     $(window).on('activate.bs.scrollspy', switchActiveLink);
     $(window).on('activate.bs.scrollspy', switchToFloating);

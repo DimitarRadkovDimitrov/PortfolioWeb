@@ -97,9 +97,21 @@ header .navbar.floatingNav .navbar-brand
 /* About Me */
 #about
 {
+	background-color: #333333;
 	max-width: 100%;
 	max-height: 100%;
 }
+
+#about .sectionHeader
+{
+	color: #E5E5E5;
+}
+
+#about .content-box
+{
+	color: #A2A2A2;
+}
+
 
 /* Footer */
 footer
