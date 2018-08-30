@@ -78,6 +78,7 @@ header .navbar.floatingNav .navbar-brand
 .content-box
 {
 	padding: 1em 0 0 0em;
+	overflow: auto;
 }
 
 .section .content-box p
@@ -123,8 +124,13 @@ header .navbar.floatingNav .navbar-brand
 	color: #A2A2A2;
 }
 
-/* Co-op */
+#about img
+{
+	height: 100%;
+	width: 100%;
+}
 
+/* Co-op */
 /* Timeline */
 #timeline
 {
@@ -231,7 +237,7 @@ header .navbar.floatingNav .navbar-brand
 	position: absolute;
 }
 
-/* Label for Ericsson P1 (January) */
+/* Label for Ericsson P3 (January) */
 #ericssonP3 .timeblock-image-container::after
 {
 	top: 50%;
@@ -270,13 +276,30 @@ footer p
 {
 	.section
 	{
-		padding-left: 1em;
-		padding-right: 1em;
+		padding-left: 2em;
+		padding-right: 2em;
 	}
 
 	.sectionHeader
 	{
 		padding: 0.5em 0;
+	}
+
+	#about.section
+	{
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+
+	#about #about-img-container
+	{
+		padding: 0 3.5em 3.5em 3.5em;
+		height: auto !important;
+	}
+
+	#about img
+	{
+		border-radius: 50%;
 	}
 
 	#timeline::after
@@ -317,6 +340,23 @@ footer p
 		padding: 0.7em 0;
 	}
 
+	#about.section
+	{
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+
+	#about #about-img-container
+	{
+		padding: 2em 7em 7em 7em;
+		height: auto !important;
+	}
+
+	#about img
+	{
+		border-radius: 50%;
+	}
+
 	#timeline .timeblock
 	{
 		padding: 1.2em 0;
@@ -331,6 +371,36 @@ footer p
 	{
 		padding-left: 1em;
 	}
+
+	#timeline .timeblock-image-container::after
+	{
+		font-size: 0.7em;
+		padding: 0 1em;
+	}
+
+	/* Label for Sheridan Date (September) */
+	#sheridan .timeblock-image-container::after
+	{
+		right: 0.3em;
+	}
+
+	/* Label for Ericsson P1 (May) */
+	#ericssonP1 .timeblock-image-container::after
+	{
+		left: 0.3em;
+	}
+
+	/* Label for Ericsson P2 (September) */
+	#ericssonP2 .timeblock-image-container::after
+	{
+		right: 0.3em;
+	}
+
+	/* Label for Ericsson P3 (January) */
+	#ericssonP3 .timeblock-image-container::after
+	{
+		left: 0.3em;
+	}
 }
 
 /* Between Medium and Large */
@@ -339,6 +409,30 @@ footer p
 	header .navbar
 	{
 		padding: 0.5rem 2rem 0 2rem;
+	}
+
+	.section
+	{
+		padding-left: 1em;
+		padding-right: 1em;
+	}
+
+	#about.section
+	{
+		padding-left: 2em;
+		padding-right: 0;
+	}
+
+	.sectionHeader
+	{
+		font-size: 1.7em;
+		padding: 0.2em 0 0.4em 0;
+	}
+
+	.section .content-box p
+	{
+		font-size: 1em;
+		margin-bottom: 1.5em;
 	}
 }
 
@@ -349,6 +443,24 @@ footer p
 	{
 		padding: 0.5rem 2rem 0 2rem;
 	}
+
+	.section
+	{
+		padding-left: 2em;
+		padding-right: 2em;
+	}
+
+	.sectionHeader
+	{
+		font-size: 1.7em;
+		padding: 0.4em 0 0.7em 0;
+	}
+
+	.section .content-box p
+	{
+		font-size: 1.1em;
+		margin-bottom: 1.8em;
+	}
 }
 
 /* X-large and Up */
@@ -357,5 +469,31 @@ footer p
 	header .navbar
 	{
 		padding: 0.5rem 5rem 0 5rem;
+	}
+
+	.sectionHeader
+	{
+		font-size: 2em;
+		padding: 0.5em 0 1em 0;
+	}
+
+	.section .content-box p
+	{
+		padding-bottom: 2em;
+	}
+
+	.section .content-box p
+	{
+		font-size: 1.1em;
+		margin-bottom: 1.8em;
+	}
+}
+
+/* XX-Large */
+@media (min-width: 1500px)
+{
+	#about #about-img-container
+	{
+		padding-left: 15%;
 	}
 }
