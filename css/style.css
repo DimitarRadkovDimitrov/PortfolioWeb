@@ -248,8 +248,8 @@ header .navbar.floatingNav .navbar-brand
 
 #timeline .timeblock-image-container img
 {
-	max-width: 50%;
-	max-height: 50%;
+	height: 100%;
+	width: 100%;
 	border-radius: 50%;
 	border: 0.1em solid black;
 }
@@ -302,27 +302,51 @@ footer p
 		border-radius: 50%;
 	}
 
+	.timestamp
+	{
+		font-size: 0.8em;
+		top: 2em;
+		left: 10%;
+		position: relative;
+		text-align: unset !important;
+	}
+
 	#timeline::after
 	{
-		left: 5%;
+		left: 15%;
 	}
 
 	#timeline .timeblock
 	{
+		top: 1.5em;
+		bottom: 1.5em;
+		padding: 0;
+		margin: 3em 0;
 		width: 100%;
 	}
 
-	/* Left Timeblock Positioning */
 	#timeline .timeblock-left, #timeline .timeblock-right
 	{
-		left: 5%;
-		padding: 1em;
+		left: 0;
 	}
 
-	/* Circle for Left Container */
-	#timeline .timeblock-left::after
+	#timeline .timeblock-left::after, #timeline .timeblock-right::after
 	{
-		left: -10px;
+		top: 0;
+		display: none;
+	}
+
+	#timeline .timeblock-image-container
+	{
+		height: auto;
+		text-align: unset !important;
+	}
+
+	#timeline .timeblock-image-container::after
+	{
+		top: 0;
+		right: 0;
+		left: 75%;
 	}
 }
 

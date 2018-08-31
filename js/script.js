@@ -7,6 +7,7 @@ function resizeImages()
 {
     resizeHomeImg();
     resizeDim();
+    resizeIcons();
 }
 
 
@@ -31,6 +32,11 @@ function resizeDim()
     var dim = $('#about-img-container');
 
     dim.attr('style', 'height: ' + boxHeight + 'px');
+}
+
+function resizeIcons()
+{
+    $('#timeline .timeblock-image-container').attr('style', 'width: ' + ($(window).width() / 4) + 'px');
 }
 
 /**
