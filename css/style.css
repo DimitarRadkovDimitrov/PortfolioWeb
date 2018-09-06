@@ -183,6 +183,11 @@ footer p
 /* Small and Below */
 @media (max-width: 576px)
 {
+	html
+	{
+		font-size: 15px;
+	}
+
 	.section
 	{
 		padding-left: 2em;
@@ -209,8 +214,8 @@ footer p
 
 	#about img
 	{
-		height: 200px;
-		width: 200px;
+		height: auto;
+		width: 60%;
 		border-radius: 50%;
 	}
 
@@ -235,6 +240,11 @@ footer p
 /* Between Small and Medium */
 @media (min-width: 577px) and (max-width: 767px)
 {
+	html
+	{
+		font-size: 16px;
+	}
+
 	.section
 	{
 		padding-left: 1em;
@@ -261,8 +271,8 @@ footer p
 
 	#about img
 	{
-		height: 250px;
-		width: 250px;
+		height: auto;
+		width: 40%;
 		border-radius: 50%;
 	}
 
@@ -275,6 +285,11 @@ footer p
 /* Between Medium and Large */
 @media (min-width: 768px) and (max-width: 991px)
 {
+	html
+	{
+		font-size: 17px;
+	}
+
 	header .navbar
 	{
 		padding: 0.5rem 2rem 0 2rem;
@@ -292,10 +307,20 @@ footer p
 		padding-right: 0;
 	}
 
+	#about img
+	{
+		padding-left: 5%;
+	}
+
 	.sectionHeader
 	{
 		font-size: 1.7em;
 		padding: 0.2em 0 0.4em 0;
+	}
+
+	.section .content-box
+	{
+		padding: 1.5em 0;
 	}
 
 	.section .content-box p
@@ -308,9 +333,20 @@ footer p
 /* Between Large and X-large */
 @media (min-width: 992px) and (max-width: 1199px)
 {
+	html
+	{
+		font-size: 16px;
+	}
+
 	header .navbar
 	{
 		padding: 0.5rem 2rem 0 2rem;
+	}
+
+	#about.section
+	{
+		padding-left: 3em;
+		padding-right: 0;
 	}
 
 	.section
@@ -323,6 +359,11 @@ footer p
 	{
 		font-size: 1.7em;
 		padding: 0.4em 0 0.7em 0;
+	}
+
+	.section .content-box
+	{
+		padding: 2.5em 0;
 	}
 
 	.section .content-box p
@@ -340,6 +381,11 @@ footer p
 /* X-large and Up */
 @media (min-width: 1200px)
 {
+	html
+	{
+		font-size: 19px;
+	}
+
 	header .navbar
 	{
 		padding: 0.5rem 5rem 0 5rem;
@@ -353,13 +399,9 @@ footer p
 
 	.section .content-box p
 	{
-		padding-bottom: 2em;
-	}
-
-	.section .content-box p
-	{
 		font-size: 1.1em;
 		margin-bottom: 1.8em;
+		padding-bottom: 2em;
 	}
 
 	#timeline .timeblock-image-container
@@ -371,9 +413,9 @@ footer p
 /* XX-Large */
 @media (min-width: 1500px)
 {
-	#about #about-img-container
+	html
 	{
-		padding-left: 15%;
+		font-size: 22px;
 	}
 
 	#timeline .timeblock-image-container
