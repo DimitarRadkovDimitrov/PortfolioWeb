@@ -127,7 +127,7 @@ header .navbar.floatingNav .navbar-brand
 #about img
 {
 	height: 100%;
-	width: 100%;
+	max-width: 100%;
 }
 
 /* Co-op */
@@ -208,14 +208,14 @@ footer p
 	#about #about-img-container
 	{
 		padding: 1em 3em 3em 3em;
-		height: auto !important;
+		height: max-content !important;
 		text-align: center;
 	}
 
 	#about img
 	{
-		height: auto;
-		width: 60%;
+		float: none !important;
+		max-height: 20%;
 		border-radius: 50%;
 	}
 
@@ -264,15 +264,15 @@ footer p
 
 	#about #about-img-container
 	{
+		height: max-content !important;
 		text-align: center;
 		padding: 2em 5em 5em 5em;
-		height: auto !important;
 	}
 
 	#about img
 	{
-		height: auto;
-		width: 40%;
+		float: none !important;
+		max-height: 25%;
 		border-radius: 50%;
 	}
 
@@ -305,11 +305,6 @@ footer p
 	{
 		padding-left: 2em;
 		padding-right: 0;
-	}
-
-	#about img
-	{
-		padding-left: 5%;
 	}
 
 	.sectionHeader
