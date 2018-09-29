@@ -137,9 +137,14 @@ header .navbar.floatingNav .navbar-brand
 	background-color: white;
 }
 
-#timeline .line
+#timeline .line-right
 {
 	border-right: 3px solid black;
+}
+
+#timeline .line-left
+{
+	border-left: 3px solid black;
 }
 
 #timeline .line::after
@@ -158,7 +163,7 @@ header .navbar.floatingNav .navbar-brand
 
 #timeline .timeblock-image-container
 {
-	margin: 5em;
+	
 }
 
 #timeline .timeblock-image-container img
@@ -196,7 +201,7 @@ footer p
 
 	.sectionHeader
 	{
-		padding: 0.5em 0;
+		padding: 0.5em 0 1em 0;
 	}
 
 	#about.section
@@ -221,6 +226,7 @@ footer p
 
 	.timestamp
 	{
+		display: none;
 		font-size: 0.8em;
 		left: 10%;
 		text-align: unset !important;
@@ -228,12 +234,71 @@ footer p
 
 	#timeline .line::after
 	{
-		left: 95%;
+		display: none;
+	}
+
+	#timeline .timeblock
+	{
+		padding: 0 1.2em;
 	}
 
 	#timeline .timeblock-image-container
 	{
-		margin: 2em;
+		text-align: center;
+	}
+
+	#timeline .timeblock-image-container img
+	{
+		margin: 1em 0;
+		height: 80px;
+		width: 80px;
+	}
+
+	#timeline .timeblock-image-container p
+	{
+		font-size: 0.9em;
+		background-color: white;
+	}
+
+	#timeline .timeblock-image-container a::after
+	{
+		content: "";
+		position: absolute;
+		z-index: -1;
+		top: 0;
+		bottom: 0;
+		left: 50%;
+		border-left: 2px solid black;
+	}
+
+	#sheridan .timeblock-image-container p::after
+	{
+		content: "Sept 2017";
+	}
+
+	#ericssonP1 .timeblock-image-container p::after
+	{
+		content: "May 2018";
+	}
+
+	#ericssonP2 .timeblock-image-container p::after
+	{
+		content: "Sept 2018";
+	}
+
+	#ericssonP3 .timeblock-image-container p::after
+	{
+		content: "Jan 2019";
+	}
+
+	#timeline .timeblock-info
+	{
+		padding: 3.2em 0em 3em 0.2em;
+	}
+
+	#timeline .timeblock-info p
+	{
+		margin: 0;
 	}
 }
 
