@@ -62,7 +62,7 @@
 
         <div id="about" class="section container-fluid">
             <div class="row">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+                <div class="col-12 col-sm-12 col-md-7 col-lg-6 col-xl-6">
                     <div class="content-box">
                         <h1 class="sectionHeader">About Me</h1>
                         <p>
@@ -79,69 +79,117 @@
                         </p>
                     </div><!-- content-box -->
                 </div><!-- col -->
-                <div id="about-img-container" class="col-12 col-md-6 col-lg-5 offset-lg-1 col-xl-5 offset-xl-1">
+                <div id="about-img-container" class="col-12 col-sm-12 col-md-5 col-lg-6 col-xl-5 offset-xl-1">
                     <picture>
                         <source media="(max-width: 767px)" srcset="./images/dimitar-head.jpg">
                         <source media="(min-width: 768px)" srcset="./images/dimitar2-1.png">
-                        <img src="./images/dimitar2-1.png">
+                        <img class="float-right" src="./images/dimitar2-1.png">
                     </picture>
                 </div><!-- col -->
             </div><!-- row -->
         </div><!-- about -->
 
-        <div id="coop" class="section container-fluid">
+        <div id="coop" class="section container">
             <div class="row">
                 <div class="col-12">
                     <h1 class="sectionHeader" style="text-align: center;">Co-op</h1>
-                    <div class="timestamp text-center" style="top: 0; margin: 0;">
-                        2017
-                    </div><!-- timestamp -->
-                    <div id="timeline">
-                        <div id="sheridan" class="timeblock timeblock-left" style="margin-top: 0;">
-                            <div class="timeblock-image-container text-center">
-                                <a href="http://google.ca">
-                                    <img src="./images/ericsson.JPG">
-                                </a>
-                            </div><!-- timeblock-image-container -->
-                        </div><!-- timeblock-left -->
-                        <div class="timestamp text-center">
-                            2018
-                        </div><!-- timestamp -->
-                        <div id="ericssonP1" class="timeblock timeblock-right">
-                            <div class="timeblock-image-container text-center">
-                                <a href="http://google.ca">
-                                    <img src="./images/ericsson.JPG">
-                                </a>
-                            </div><!-- timeblock-image-container -->
-                        </div><!-- timeblock-right -->
-                        <div id="ericssonP2" class="timeblock timeblock-left">
-                            <div class="timeblock-image-container text-center">
-                                <a href="http://google.ca">
-                                    <img src="./images/ericsson.JPG">
-                                </a>
-                            </div><!-- timeblock-image-container -->
-                        </div><!-- timeblock-left -->
-                        <div class="timestamp text-center">
-                            2019
-                        </div><!-- timestamp -->
-                        <div id="ericssonP3" class="timeblock timeblock-right">
-                            <div class="timeblock-image-container text-center">
-                                <a href="http://google.ca">
-                                    <img src="./images/ericsson.JPG">
-                                </a>
-                            </div><!-- timeblock-image-container -->
-                        </div><!-- timeblock-right -->
-                        <div class="timestamp text-center">
-                            END
-                        </div><!-- timestamp -->
-                    </div><!-- timeline -->
                 </div><!-- col -->
             </div><!-- row -->
+            <div class="row">
+                <div id="timeline" class="col-12">
+                    <div class="col-12 timestamp text-center" style="top: 0; margin: 0;">
+                        2017
+                    </div><!-- timestamp -->
+                    <div id="sheridan" class="timeblock timeblock-left col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-4 col-sm-4 offset-sm-1 col-md-5 offset-md-0 col-lg-4 col-xl-5 timeblock-image-container">
+                                    <p class="text-center"></p>
+                                    <a href="http://google.ca">
+                                        <img src="./images/ericsson.JPG">
+                                    </a>
+                                </div><!-- timeblock-image-container -->
+                                <div class="col-8 col-sm-7 col-md-7 col-lg-8 col-xl-7 timeblock-info">
+                                    <p><b>Sheridan College (4 months)</b></p>
+                                    <p style="margin-bottom: 0.5em;"><i>Oakville, ON</i></p>
+                                    <p>Java Learning Assistant</p>
+                                </div><!-- col -->
+                            </div><!-- row -->
+                        </div>
+                    </div><!-- col -->
+
+                    <div class="col-12 timestamp text-center">
+                        2018
+                    </div><!-- timestamp -->
+
+                    <div id="ericssonP1" class="timeblock timeblock-right col-12 col-sm-12 col-md-6 offset-md-6 col-lg-6">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-4 col-sm-4 offset-sm-1 col-md-5 offset-md-0 col-lg-4 col-xl-5 timeblock-image-container">
+                                    <p class="text-center"></p>
+                                    <a href="http://google.ca">
+                                        <img src="./images/ericsson.JPG">
+                                    </a>
+                                </div><!-- timeblock-image-container -->
+                                <div class="col-8 col-sm-7 col-md-7 col-lg-8 col-xl-7 timeblock-info">
+                                    <p><b>Ericsson (12 months)</b></p>
+                                    <p style="margin-bottom: 0.5em;"><i>Toronto, ON</i></p>
+                                    <p>Software Developer Intern</p>
+                                </div><!-- col -->
+                            </div><!-- row -->
+                        </div>
+                    </div><!-- col -->
+
+                    <div id="ericssonP2" class="timeblock timeblock-left col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-4 col-sm-4 offset-sm-1 col-md-5 offset-md-0 col-lg-4 col-xl-5 timeblock-image-container">
+                                    <p class="text-center"></p>
+                                    <a href="http://google.ca">
+                                        <img src="./images/ericsson.JPG">
+                                    </a>
+                                </div><!-- timeblock-image-container -->
+                                <div class="col-8 col-sm-7 col-md-7 col-lg-8 col-xl-7 timeblock-info">
+                                    <p><b>Ericsson</b></p>
+                                    <p style="margin-bottom: 0.5em;"><i>Toronto, ON</i></p>
+                                    <p>Software Developer Intern</p>
+                                </div><!-- col -->
+                            </div><!-- row -->
+                        </div>
+                    </div><!-- col -->
+
+                    <div class="col-12 timestamp text-center">
+                        2019
+                    </div><!-- timestamp -->
+
+                    <div id="ericssonP3" class="timeblock timeblock-right col-12 col-sm-12 col-md-6 offset-md-6 col-lg-6">
+                        <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-4 col-sm-4 offset-sm-1 col-md-5 offset-md-0 col-lg-4 col-xl-5 timeblock-image-container">
+                                    <p class="text-center"></p>
+                                    <a href="http://google.ca">
+                                        <img src="./images/ericsson.JPG">
+                                    </a>
+                                </div><!-- timeblock-image-container -->
+                                <div class="col-8 col-sm-7 col-md-7 col-lg-8 col-xl-7 timeblock-info">
+                                    <p><b>Ericsson</b></p>
+                                    <p style="margin-bottom: 0.5em;"><i>Toronto, ON</i></p>
+                                    <p>Software Developer Intern</p>
+                                </div><!-- col -->
+                            </div><!-- row -->
+                        </div>
+                    </div><!-- col -->
+
+                    <div class="col-12 timestamp text-center">
+                        End
+                    </div><!-- timestamp -->
+                </div><!-- timeline -->
+            </div><!-- row-->
         </div><!-- coop -->
     </div><!-- main -->
 
     <footer>
-        <div class=" container-fluid">
+        <div class="container-fluid">
             <p>Copyright &copy; 2018 <a href="http://www.dimitardimitrov.ca">Dimitar Dimitrov</a>. All rights reserved.</p>
         </div><!--  container-fluid -->
     </footer>
