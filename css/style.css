@@ -38,6 +38,27 @@ header .navbar .navbar-nav .active a
 	text-shadow: none;
 }
 
+header .navbar .navbar-nav .dropdown-menu
+{
+	background-color: transparent;
+}
+
+header .navbar .navbar-nav .active .dropdown-item
+{
+	border: none;
+}
+
+header .navbar .navbar-nav .dropdown-item:hover
+{
+	background-color: DeepSkyBlue;
+}
+
+
+header .navbar .navbar-nav .dropdown:hover>.dropdown-menu
+{
+	display: block;
+}
+
 /* Navbar Brand */
 header .navbar-brand
 {
