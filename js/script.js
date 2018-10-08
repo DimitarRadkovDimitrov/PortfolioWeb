@@ -75,8 +75,9 @@ $(document).ready(function() {
     const topOffset = 52; //menu height
     resizeImages();
     $('.section').css('padding-top', topOffset);
+    $('.section .sidebar').css('top', topOffset);
 
-    $('body').scrollspy({target: 'header .navbar', offset: topOffset}); //activate scrollspy
+    $('body').scrollspy({target: '.navbar', offset: topOffset}); //activate scrollspy
     switchActiveLink(); //initialize active link
     switchToFloating(); //switch to floating if starting off on non-home page
 

@@ -48,11 +48,15 @@ header .navbar .navbar-nav .active .dropdown-item
 	border: none;
 }
 
+header .navbar .navbar-nav .dropdown-item
+{
+	color: black;
+}
+
 header .navbar .navbar-nav .dropdown-item:hover
 {
 	background-color: DeepSkyBlue;
 }
-
 
 header .navbar .navbar-nav .dropdown:hover>.dropdown-menu
 {
@@ -88,6 +92,50 @@ header .navbar.floatingNav .navbar-brand
 .section
 {
 	padding: 0 5rem 5rem 5rem;
+}
+
+.section .sidebar
+{
+	padding: 2em 0 0 0;
+}
+
+.section .sidebar .navbar
+{
+	padding: 0;
+}
+
+.section .sidebar .navbar nav
+{
+	padding: 0 1em 1em 1em;
+}
+
+.section .sidebar .navbar-brand
+{
+	font-size: 1.05em;
+	padding: 1em;
+	margin: 0;
+}
+
+.section .sidebar .heading
+{
+	font-size: 0.9em;
+	padding: 0 0 0.7em 0;
+}
+
+.section .sidebar .subheading
+{
+	font-size: 0.7em;
+	padding: 0 0 0.5em 0.5em;
+}
+
+.section .sidebar .nav-link
+{
+	color: black;
+}
+
+.section .sidebar .nav-link.active
+{
+	font-weight: bold;
 }
 
 .sectionHeader
@@ -181,6 +229,12 @@ header .navbar.floatingNav .navbar-brand
 	border-radius: 50%;
 	height: 100%;
 	width: 100%;
+}
+
+/* Co-op Posts */
+.coopPost .content-box
+{
+	padding: 2.8em 0 0 0em;
 }
 
 /* Footer */
