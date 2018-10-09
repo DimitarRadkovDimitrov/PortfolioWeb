@@ -234,7 +234,20 @@ header .navbar.floatingNav .navbar-brand
 /* Co-op Posts */
 .coopPost .content-box
 {
-	padding: 2.8em 0 0 0em;
+	padding: 2.8em 0 0 1.5em;
+}
+
+.coopPost .content-box h5
+{
+	font-size: 1.2em;
+	padding: 0 0 1em 0;
+}
+
+.coopPost .content-box h6
+{
+	font-size: 0.9em;
+	font-weight: 600;
+	padding: 0 0 0.7em 0;
 }
 
 /* Footer */
@@ -720,6 +733,12 @@ footer p
 		padding-bottom: 2em;
 	}
 
+	.section .sidebar .heading
+	{
+		font-size: 0.8em;
+		padding: 0 0 0.7em 0;
+	}
+
 	#coop.container
 	{
 		max-width: 100%;
@@ -783,6 +802,12 @@ footer p
 	#timeline .timeblock-info p
 	{
 		margin: 0.4em;
+	}
+
+	.coopPost .content-box p
+	{
+		font-size: 0.9em;
+		padding: 0;
 	}
 }
 
