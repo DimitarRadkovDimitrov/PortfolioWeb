@@ -91,12 +91,12 @@ header .navbar.floatingNav .navbar-brand
 /* Section */
 .section
 {
-	padding: 0 5rem 5rem 5rem;
+	padding: 5rem;
 }
 
 .section .sidebar
 {
-	padding: 2em 0 0 0;
+	padding: 3em 0;
 }
 
 .section .sidebar .navbar
@@ -146,7 +146,7 @@ header .navbar.floatingNav .navbar-brand
 
 .content-box
 {
-	padding: 1em 0 0 0em;
+	padding: 0;
 	overflow: auto;
 }
 
@@ -179,8 +179,7 @@ header .navbar.floatingNav .navbar-brand
 
 #about.section
 {
-	padding-right: 0;
-	padding-bottom: 0;
+	padding: 0 0 0 5rem;
 }
 
 #about .sectionHeader
@@ -232,22 +231,17 @@ header .navbar.floatingNav .navbar-brand
 }
 
 /* Co-op Posts */
-.coopPost .content-box
-{
-	padding: 2.8em 0 0 1.5em;
-}
-
 .coopPost .content-box h5
 {
 	font-size: 1.2em;
-	padding: 0 0 1em 0;
+	padding: 0.5em 0 1em 0;
 }
 
 .coopPost .content-box h6
 {
 	font-size: 0.9em;
 	font-weight: 600;
-	padding: 0 0 0.7em 0;
+	padding: 0.5em 0 0.7em 0;
 }
 
 /* Footer */
@@ -270,21 +264,19 @@ footer p
 		font-size: 15px;
 	}
 
-	.section
+	.section, #about.section
 	{
-		padding-left: 2em;
-		padding-right: 2em;
+		padding: 2rem;
+	}
+
+	.section .sidebar
+	{
+		display: none;
 	}
 
 	.sectionHeader
 	{
-		padding: 0.5em 0 1em 0;
-	}
-
-	#about.section
-	{
-		padding-left: 2em;
-		padding-right: 2em;
+		padding: 0.5em 0;
 	}
 
 	#about #about-img-container
@@ -301,9 +293,15 @@ footer p
 		border-radius: 50%;
 	}
 
-	#coop.section
+	#about .content-box
 	{
 		padding: 0;
+	}
+
+	#coop.section
+	{
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	.timestamp
@@ -401,8 +399,7 @@ footer p
 
 	.section
 	{
-		padding-left: 1em;
-		padding-right: 1em;
+		padding: 2rem;
 	}
 
 	.sectionHeader
@@ -412,15 +409,14 @@ footer p
 
 	#about.section
 	{
-		padding-left: 2em;
-		padding-right: 2em;
+		padding: 2rem 4rem;
 	}
 
 	#about #about-img-container
 	{
 		height: max-content !important;
 		text-align: center;
-		padding: 2em 5em 5em 5em;
+		padding: 2em 5em;
 	}
 
 	#about img
@@ -428,6 +424,12 @@ footer p
 		float: none !important;
 		max-height: 25%;
 		border-radius: 50%;
+	}
+
+	#coop.section
+	{
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	.timestamp
@@ -521,20 +523,18 @@ footer p
 
 	.section
 	{
-		padding-left: 1em;
-		padding-right: 1em;
+		padding: 2rem;
 	}
 
 	#about.section
 	{
-		padding-left: 2em;
-		padding-right: 0;
+		padding: 0 0 0 2rem;
 	}
 
 	.sectionHeader
 	{
 		font-size: 1.7em;
-		padding: 0.2em 0 0.4em 0;
+		padding: 1em 0;
 	}
 
 	.section .content-box
@@ -546,6 +546,12 @@ footer p
 	{
 		font-size: 1em;
 		margin-bottom: 1.5em;
+	}
+
+	#coop.section
+	{
+		padding-left: 0;
+		padding-right: 0;
 	}
 
 	#coop.container
@@ -619,25 +625,29 @@ footer p
 
 	#about.section
 	{
-		padding-left: 3em;
+		padding: 0 0 0 3rem;
+	}
+
+	#coop.section
+	{
+		padding-left: 0;
 		padding-right: 0;
 	}
 
 	.section
 	{
-		padding-left: 2em;
-		padding-right: 2em;
+		padding: 2rem;
 	}
 
 	.sectionHeader
 	{
 		font-size: 1.7em;
-		padding: 0.4em 0 0.7em 0;
+		padding: 1.5em 0;
 	}
 
 	.section .content-box
 	{
-		padding: 2.5em 0;
+		padding: 1em 0;
 	}
 
 	.section .content-box p
@@ -720,17 +730,37 @@ footer p
 		padding: 0.5rem 5rem 0 5rem;
 	}
 
+	#about.section
+	{
+		padding: 0 0 0 3rem;
+	}
+
+	.section
+	{
+		padding: 2rem;
+	}
+
 	.sectionHeader
 	{
 		font-size: 2em;
-		padding: 0.5em 0 1em 0;
+		padding: 1.2em 0;
+	}
+
+	.section .content-box
+	{
+		padding: 1em 0;
+	}
+
+	.coopPost .content-box
+	{
+		padding: 3em;
 	}
 
 	.section .content-box p
 	{
 		font-size: 1.1em;
 		margin-bottom: 1.8em;
-		padding-bottom: 2em;
+		padding-bottom: 1em;
 	}
 
 	.section .sidebar .heading
