@@ -234,6 +234,7 @@ header .navbar.floatingNav .navbar-brand
 .coopPost .content-box h5
 {
 	font-size: 1.2em;
+	font-weight: 600;
 	padding: 0.5em 0 1em 0;
 }
 
@@ -242,6 +243,11 @@ header .navbar.floatingNav .navbar-brand
 	font-size: 0.9em;
 	font-weight: 600;
 	padding: 0.5em 0 0.7em 0;
+}
+
+.coopPost .sectionHeader
+{
+	display: none;
 }
 
 /* Footer */
@@ -253,6 +259,7 @@ footer
 footer p
 {
 	font-size: 0.75em;
+	margin-bottom: 0;
 	color: white;
 }
 
@@ -264,7 +271,17 @@ footer p
 		font-size: 15px;
 	}
 
-	.section, #about.section
+	header .navbar .navbar-nav .dropdown-item
+	{
+		color: white;
+	}
+
+	.section
+	{
+		padding: 3rem;
+	}
+
+	#about.section
 	{
 		padding: 2rem;
 	}
@@ -387,6 +404,16 @@ footer p
 	{
 		margin: 0;
 	}
+
+	.coopPost .sectionHeader
+	{
+		display: block;
+	}
+
+	.coopPost .content-box h6
+	{
+		font-size: 1.2em;
+	}
 }
 
 /* Between Small and Medium */
@@ -397,14 +424,24 @@ footer p
 		font-size: 16px;
 	}
 
+	header .navbar .navbar-nav .dropdown-item
+	{
+		color: white;
+	}
+
 	.section
 	{
-		padding: 2rem;
+		padding: 4rem;
+	}
+
+	.section .sidebar
+	{
+		display: none;
 	}
 
 	.sectionHeader
 	{
-		padding: 0.7em 0;
+		padding: 1em 0;
 	}
 
 	#about.section
@@ -506,6 +543,16 @@ footer p
 	{
 		margin: 0;
 	}
+
+	.coopPost .sectionHeader
+	{
+		display: block;
+	}
+
+	.coopPost .content-box h6
+	{
+		font-size: 1.2em;
+	}
 }
 
 /* Between Medium and Large */
@@ -523,7 +570,12 @@ footer p
 
 	.section
 	{
-		padding: 2rem;
+		padding: 1rem;
+	}
+
+	.section .sidebar
+	{
+		padding: 2em 0em;
 	}
 
 	#about.section
@@ -607,6 +659,11 @@ footer p
 	#timeline .timeblock-info p
 	{
 		margin: 0;
+	}
+
+	.coopPost .content-box
+	{
+		padding: 4em 2em;
 	}
 }
 
@@ -714,6 +771,11 @@ footer p
 	#timeline .timeblock-info p
 	{
 		margin: 0;
+	}
+
+	.coopPost .content-box
+	{
+		padding: 4.5em 2em;
 	}
 }
 
@@ -849,6 +911,11 @@ footer p
 		font-size: 22px;
 	}
 
+	.section .sidebar
+	{
+		padding: 3em;
+	}
+
 	#coop.container
 	{
 		max-width: 1500px;
@@ -858,5 +925,10 @@ footer p
 	{
 		height: 175px;
 		width: 175px;
+	}
+
+	.coopPost .content-box
+	{
+		padding: 3em 0;
 	}
 }
