@@ -230,6 +230,43 @@ header .navbar.floatingNav .navbar-brand
 	width: 100%;
 }
 
+/* Resume */
+#resume
+{
+	background-color: #E3E3E3;
+}
+
+#resume .sectionHeader
+{
+	padding: 1em 0 0 0;
+}
+
+#resume .resume-header
+{
+	padding: 0.5em 0;
+}
+
+#resume .resume-content
+{
+	padding: 1em 0 2em 2em;
+}
+
+#resume .resume-col
+{
+	padding-top: 0.5em;
+}
+
+#resume .img-icon
+{
+	padding-top: 1em;
+	padding-bottom: 1em;
+}
+
+#resume .img-icon img
+{
+	padding: 1em;
+}
+
 /* Co-op Posts */
 .coopPost .content-box h5
 {
