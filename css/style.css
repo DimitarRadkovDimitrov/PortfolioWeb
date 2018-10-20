@@ -238,17 +238,24 @@ header .navbar.floatingNav .navbar-brand
 
 #resume .sectionHeader
 {
-	padding: 1em 0 0 0;
 }
 
 #resume .resume-header
 {
-	padding: 0.5em 0;
 }
 
 #resume .resume-content
 {
-	padding: 1em 0 2em 2em;
+}
+
+#resume .card
+{
+	margin: 1em 0 0.5em 0;
+}
+
+#resume .card li
+{
+	padding: 1em;
 }
 
 #resume .resume-col
