@@ -280,6 +280,28 @@ header .navbar.floatingNav .navbar-brand
 	padding: 1em;
 }
 
+/* Projects */
+#projects .project-item
+{
+	padding: 0 2em 2em 2em;
+}
+
+#projects .project-item h3
+{
+	padding: 1em 0;
+}
+
+#projects .project-item img
+{
+	padding: 1em 0;
+}
+
+#projects .project-item p
+{
+	padding: 2em 0;
+	margin: 0;
+}
+
 /* Co-op Posts */
 .coopPost .content-box h5
 {
