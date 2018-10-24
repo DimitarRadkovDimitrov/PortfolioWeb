@@ -492,6 +492,11 @@ footer p
 		padding: 0em;
 	}
 
+	#projects .project-item
+	{
+		padding-bottom: 4em;
+	}
+
 	.coopPost .sectionHeader
 	{
 		display: block;
@@ -629,6 +634,11 @@ footer p
 	#timeline .timeblock-info p
 	{
 		margin: 0;
+	}
+
+	#projects .project-item
+	{
+		padding-bottom: 4em;
 	}
 
 	.coopPost .sectionHeader
