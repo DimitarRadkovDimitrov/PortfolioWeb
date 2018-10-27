@@ -1,27 +1,5 @@
 "use strict";
 
-/**
- * Resize Dynamic Images
- */
-function resizeImages()
-{
-    resizeHomeImg();
-    resizeDim();
-}
-
-
-/**
- * Makes title image fill entire window on resize
- */
-function resizeHomeImg()
-{
-    var winHeight = $(window).height();
-    var winWidth = $(window).width();
-    var imgContainer = $('#home');
-
-    imgContainer.attr('style', 'height: ' + winHeight + 'px');
-}
-
 /*
  * Resize about me image to be height of text
  */
@@ -58,7 +36,7 @@ function switchActiveLink()
 function switchToFloating()
 {
     let link = $('.navbar-nav').find('.nav-link.active').attr('href');
-    if (link !== '#home')
+    if (link !== '#about')
     {
         $('header nav').addClass('floatingNav');
     }
@@ -73,8 +51,9 @@ function switchToFloating()
  */
 $(document).ready(function() {
     const topOffset = 52; //menu height
-    resizeImages();
+    resizeDim();
     //$('.section').css('padding-top', topOffset);
+    $('#about').css('padding-top', topOffset);
     $('.section .sidebar').css('top', topOffset);
 
     $('body').scrollspy({target: '.navbar', offset: topOffset}); //activate scrollspy
@@ -82,7 +61,7 @@ $(document).ready(function() {
     switchToFloating(); //switch to floating if starting off on non-home page
 
     //event listeners
-    window.addEventListener('resize', resizeImages);
+    window.addEventListener('resize', resizeDim);
     $(document).on('click', 'a[href^="#"]', function() {
         event.preventDefault();
         $('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top - topOffset}, 750);

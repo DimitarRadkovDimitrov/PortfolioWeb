@@ -21,7 +21,7 @@ h1, h2, h3, h4, h5, h6
 /* Header Navigation */
 header .navbar
 {
-	background-color: transparent;
+	background-color: black;
 	padding: 0.5rem 1rem 0 1rem;
 	transition: all .5s ease-out;
 }
@@ -286,6 +286,21 @@ header .navbar.floatingNav .navbar-brand
 	padding: 0 2em 2em 2em;
 }
 
+#projects .project-item:hover
+{
+	color: blue;
+}
+
+#projects .project-item .link-spanner
+{
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left: 0;
+	z-index: 1;
+}
+
 #projects .project-item h3
 {
 	padding: 1em 0;
@@ -293,7 +308,7 @@ header .navbar.floatingNav .navbar-brand
 
 #projects .project-item img
 {
-	padding: 1em 0;
+
 }
 
 #projects .project-item p
