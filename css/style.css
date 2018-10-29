@@ -5,12 +5,16 @@
  * large: 992px - 1199px
  * X-large: >= 1200px
 */
-@import url('https://fonts.googleapis.com/css?family=Roboto:300i,400,700|Work+Sans:400,700');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600');
 
 html
 {
-	font-family: "Roboto", sans-serif;
 	font-size: 18px;
+}
+
+body
+{
+	font-family: 'Open Sans', sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6
@@ -40,17 +44,12 @@ header .navbar .navbar-nav .active a
 
 header .navbar .navbar-nav .dropdown-menu
 {
-	background-color: transparent;
+	background-color: black;
 }
 
 header .navbar .navbar-nav .active .dropdown-item
 {
 	border: none;
-}
-
-header .navbar .navbar-nav .dropdown-item
-{
-	color: black;
 }
 
 header .navbar .navbar-nav .dropdown-item:hover
@@ -230,23 +229,20 @@ header .navbar.floatingNav .navbar-brand
 	width: 100%;
 }
 
+#timeline .timeblock-image-container img.img-disabled
+{
+	opacity: 0.5;
+}
+
 /* Resume */
 #resume
 {
-	background-color: #E3E3E3;
-}
-
-#resume .sectionHeader
-{
+	background-color: #F2F2F2;
 }
 
 #resume .resume-header
 {
 	padding: 0.5em 0 0em 0;
-}
-
-#resume .resume-content
-{
 }
 
 #resume .card
@@ -306,15 +302,17 @@ header .navbar.floatingNav .navbar-brand
 	padding: 1em 0;
 }
 
-#projects .project-item img
-{
-
-}
-
 #projects .project-item p
 {
 	padding: 2em 0;
 	margin: 0;
+}
+
+/* Contact */
+#contact
+{
+	background-color: #333333;
+	color: white;
 }
 
 /* Co-op Posts */
@@ -335,6 +333,39 @@ header .navbar.floatingNav .navbar-brand
 .coopPost .sectionHeader
 {
 	display: none;
+}
+
+/* Font-Awesome Buttons */
+.fa
+{
+	margin: 3em 0.2em 1em 0.2em;
+	padding: 15px;
+	height: 50px;
+  	width: 50px;
+  	border-radius: 50%;
+}
+
+.fa:hover
+{
+    opacity: 0.7;
+}
+
+.fa-linkedin
+{
+  	background: #007bb5;
+  	color: white;
+}
+
+.fa-github
+{
+  	background: black;
+  	color: white;
+}
+
+.fa-instagram
+{
+	background: #e4405f;
+	color: white;
 }
 
 /* Footer */
