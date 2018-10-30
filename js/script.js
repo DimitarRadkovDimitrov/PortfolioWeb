@@ -50,7 +50,7 @@ function switchToFloating()
  * Main execution
  */
 $(document).ready(function() {
-    const topOffset = 52; //menu height
+    const topOffset = $('header .navbar').outerHeight(); //menu height
     resizeDim();
     //$('.section').css('padding-top', topOffset);
     $('#about').css('padding-top', topOffset);
@@ -64,7 +64,7 @@ $(document).ready(function() {
     window.addEventListener('resize', resizeDim);
     $(document).on('click', 'a[href^="#"]', function() {
         event.preventDefault();
-        $('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top - topOffset}, 750);
+        $('html, body').animate({scrollTop: $($.attr(this, 'href')).offset().top - topOffset + 1}, 750);
     });
     $(window).on('activate.bs.scrollspy', switchActiveLink);
     $(window).on('activate.bs.scrollspy', switchToFloating);
