@@ -7,7 +7,6 @@ function resizeDim()
 {
     var boxHeight = $('#about .content-box').outerHeight();
     var dim = $('#about-img-container');
-
     dim.attr('style', 'height: ' + boxHeight + 'px');
 }
 
@@ -52,7 +51,7 @@ function switchToFloating()
 $(document).ready(function() {
     const topOffset = $('header .navbar').outerHeight(); //menu height
     resizeDim();
-    //$('.section').css('padding-top', topOffset);
+
     $('#about').css('padding-top', topOffset);
     $('.section .sidebar').css('top', topOffset);
 
