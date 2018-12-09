@@ -123,8 +123,7 @@ header .navbar.floatingNav .navbar-brand {
 }
 
 /* COOPPOSTS */
-.coopPost .sectionHeader
-{
+.coopPost .sectionHeader {
     padding: 0 0 0.5em 0
 }
 
@@ -337,8 +336,7 @@ footer p {
         padding: 0
     }
 
-    .coopPost .sectionHeader
-    {
+    .coopPost .sectionHeader {
         padding-top: 1em
     }
 
@@ -462,13 +460,11 @@ footer p {
         padding: 1em 0
     }
 
-    .coopPost .sectionHeader
-    {
+    .coopPost .sectionHeader {
         padding-top: 1em
     }
 
-    .coopPost .content-box
-    {
+    .coopPost .content-box {
         padding: 0;
     }
 
