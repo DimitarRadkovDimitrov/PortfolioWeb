@@ -30,6 +30,7 @@ $(document).ready(function() {
     const topOffset = $('header .navbar').outerHeight();
     resizeDim();
     $('#about').css('padding-top', topOffset);
+    $('.coopPost').css('padding-top', topOffset);
     $('.section .sidebar').css('top', topOffset);
     $('body').scrollspy({
         target: '.navbar',

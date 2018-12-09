@@ -12,6 +12,7 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0
 }
 
+/* NAVBAR */
 header .navbar {
     background-color: #000;
     padding: .5rem 1rem 0;
@@ -59,8 +60,9 @@ header .navbar.floatingNav .navbar-brand {
     visibility: visible
 }
 
+/* SIDEBAR NAV */
 .sidebar {
-    padding: 3em 0
+    padding: 2em 0
 }
 
 .sidebar .navbar {
@@ -95,6 +97,7 @@ header .navbar.floatingNav .navbar-brand {
     font-weight: 700
 }
 
+/* SECTION */
 .section {
     padding: 5rem
 }
@@ -104,6 +107,7 @@ header .navbar.floatingNav .navbar-brand {
     padding: 2em 0 1.5em
 }
 
+/* CONTENT BOX */
 .content-box {
     padding: 0;
     overflow: auto
@@ -118,6 +122,16 @@ header .navbar.floatingNav .navbar-brand {
     margin-bottom: 2.5em
 }
 
+/* COOPPOSTS */
+.coopPost .sectionHeader
+{
+    padding: 0 0 0.5em 0
+}
+
+.coopPost .content-box {
+    padding: 2em 3.5em
+}
+
 .coopPost .content-box h5 {
     font-size: 1.2em;
     font-weight: 600;
@@ -130,6 +144,7 @@ header .navbar.floatingNav .navbar-brand {
     padding: .5em 0 .7em
 }
 
+/* ABOUT */
 #about {
     background-color: #333;
     max-width: 100%;
@@ -149,6 +164,7 @@ header .navbar.floatingNav .navbar-brand {
     max-width: 100%
 }
 
+/* TIMELINE */
 #timeline {
     margin: 0 auto
 }
@@ -175,6 +191,7 @@ header .navbar.floatingNav .navbar-brand {
     width: 100%
 }
 
+/* RESUME */
 #resume {
     background-color: #F2F2F2
 }
@@ -212,6 +229,7 @@ header .navbar.floatingNav .navbar-brand {
     padding: 1em
 }
 
+/* PROJECTS */
 .project-item {
     padding: 0 2em 2em
 }
@@ -238,13 +256,10 @@ header .navbar.floatingNav .navbar-brand {
     margin: 0
 }
 
+/* CONTACT */
 #contact {
     background-color: #333;
     color: #fff
-}
-
-.coopPost .sectionHeader {
-    display: none
 }
 
 .fa {
@@ -318,8 +333,13 @@ footer p {
         padding: .5em 0
     }
 
-    #about .content-box, #timeline {
+    #about .content-box, .coopPost .content-box, #timeline {
         padding: 0
+    }
+
+    .coopPost .sectionHeader
+    {
+        padding-top: 1em
     }
 
     .coopPost .content-box h6 {
@@ -442,6 +462,16 @@ footer p {
         padding: 1em 0
     }
 
+    .coopPost .sectionHeader
+    {
+        padding-top: 1em
+    }
+
+    .coopPost .content-box
+    {
+        padding: 0;
+    }
+
     .coopPost .content-box h6 {
         font-size: 1.2em
     }
@@ -515,10 +545,6 @@ footer p {
     .project-item {
         padding-bottom: 4em
     }
-
-    .coopPost .sectionHeader {
-        display: block
-    }
 }
 
 @media (min-width:768px) and (max-width:991px) {
@@ -538,10 +564,6 @@ footer p {
 
     header .navbar {
         padding: .5rem 2rem 0
-    }
-
-    .sidebar {
-        padding: 2em 0
     }
 
     .section {
@@ -564,10 +586,6 @@ footer p {
 
     .content-box {
         padding: 1.5em 0
-    }
-
-    .coopPost .content-box {
-        padding: 4em 2em
     }
 
     .content-box p {
@@ -649,10 +667,6 @@ footer p {
 
     .content-box {
         padding: 1em 0
-    }
-
-    .coopPost .content-box {
-        padding: 4.5em 2em
     }
 
     .content-box p {
@@ -740,10 +754,6 @@ footer p {
         padding: 1em 0
     }
 
-    .coopPost .content-box {
-        padding: 3em
-    }
-
     .content-box p {
         font-size: 1.1em;
         margin-bottom: 1.8em;
@@ -801,14 +811,6 @@ footer p {
 @media (min-width:1500px) {
     html {
         font-size: 22px
-    }
-
-    .sidebar {
-        padding: 3em
-    }
-
-    .coopPost .content-box {
-        padding: 3em 0
     }
 
     #coop.container {
