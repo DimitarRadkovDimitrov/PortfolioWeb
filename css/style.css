@@ -190,51 +190,23 @@ header .navbar.floatingNav .navbar-brand {
     width: 100%
 }
 
-/* RESUME */
-#resume {
+/* PROJECTS */
+#projects
+{
     background-color: #F2F2F2
 }
 
-.resume-header {
-    padding: .5em 0 0
-}
-
-.card {
-    margin: 1em 0 .5em
-}
-
-.card .card-footer {
-    background-color: #E3E3E3
-}
-
-.card ul {
-    padding-inline-start: 1.8em
-}
-
-.card li {
-    padding: 1em
-}
-
-.resume-col {
-    padding-top: .5em
-}
-
-.img-icon {
-    padding-top: 1em;
-    padding-bottom: 1em
-}
-
-.img-icon img {
-    padding: 1em
-}
-
-/* PROJECTS */
 .project-item {
     padding: 0 2em 2em
 }
 
+.project-item img {
+    height: 15vw;
+    object-fit: scale-down;
+}
+
 .project-item:hover {
-    color: #00f
+    font-weight: bold
 }
 
 .project-item .link-spanner {
@@ -324,10 +296,6 @@ footer p {
         padding-right: 0
     }
 
-    #resume.section {
-        padding: 2rem 1.5rem
-    }
-
     .sectionHeader {
         padding: .5em 0
     }
@@ -413,16 +381,12 @@ footer p {
         margin: 0
     }
 
-    .resume-btn {
-        height: 100%
-    }
-
-    .img-icon img {
-        padding: 0
-    }
-
     .project-item {
         padding-bottom: 4em
+    }
+
+    .project-item img {
+        height: 40vw;
     }
 
     .coopPost .sectionHeader {
@@ -541,6 +505,10 @@ footer p {
     .project-item {
         padding-bottom: 4em
     }
+
+    .project-item img {
+        height: 30vw;
+    }
 }
 
 @media (min-width:768px) and (max-width:991px) {
@@ -621,6 +589,10 @@ footer p {
 
     .timeblock-info p {
         margin: 0
+    }
+
+    .project-item img {
+        height: 20vw;
     }
 }
 
