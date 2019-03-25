@@ -191,8 +191,7 @@ header .navbar.floatingNav .navbar-brand {
 }
 
 /* PROJECTS */
-#projects
-{
+#projects {
     background-color: #F2F2F2
 }
 
@@ -258,6 +257,11 @@ header .navbar.floatingNav .navbar-brand {
 .fa-instagram {
     background: #e4405f;
     color: #fff
+}
+
+/* NAV BUTTON */
+.nav-button-group {
+    padding: 2em;
 }
 
 footer {
